@@ -1,5 +1,8 @@
-library(cluster)  #to use pam()
-library(fpc)      #to use cluste.stats()
+if(!require(cluster)){install.packages("cluster")}
+library(cluster) #pam()
+if(!require(fpc)){install.packages("fpc")}
+library(fpc) #cluste.stats()
+
 #############################################
 ##############CPUE Simulations###############
 #############################################
